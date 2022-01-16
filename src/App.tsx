@@ -1,26 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import * as Styled from './App.styled'
+import { Header } from '@containers/Header'
+import { SectionAbilities } from '@containers/Section.Abilities'
+import { SectionWorks } from '@containers/Section.Works'
+import { SectionPartners } from '@containers/Section.Partners'
+import { SectionForm } from '@containers/Section.Form'
+import { SectionAchievements } from '@containers/Section.Achievements'
+import { SectionResources } from '@containers/Section.Resources'
+import { SectionFAQ } from '@containers/Section.FAQ'
+import { SectionKickstart } from '@containers/Section.Kickstart'
+import { Footer } from '@containers/Footer'
 
-function App() {
+export const App: React.FC<{}> = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Styled.Main>
+      <Header />
+      <SectionAbilities />
+      <SectionWorks />
+      <SectionPartners />
+      <SectionForm />
+      <SectionAchievements />
+      <SectionResources />
+      <SectionFAQ />
+      <SectionKickstart />
+      <Footer />
+    </Styled.Main>
+  )
 }
-
-export default App;

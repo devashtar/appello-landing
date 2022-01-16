@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "baseUrl": "./src",
+        "paths": {
+            "@components/*": ["./components/*"],
+            "@components": ["./components"],
+            "@containers/*": ["./containers/*"],
+            "@containers": ["./containers"],
+            "@breakpoints/*": ["./breakpoints/*"],
+            "@breakpoints": ["./breakpoints"],
+            "@store/*": ["./store/*"],
+            "@store": ["./store"]
+        }
+    }
+}
